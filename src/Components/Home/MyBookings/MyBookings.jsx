@@ -5,7 +5,7 @@ import HospitalCard from "../../HospitalCard/HospitalCard";
 import SearchBar from "../../SearchBar/SearchBar";
 import { NavBar } from "../../NavBar/NavBar";
 
-export default function MyBookings() {
+export const MyBookings = () => {
   const [bookings, setBookings] = useState([]);
   const [filteredBookings, setFilteredBookings] = useState([]);
 
@@ -94,4 +94,4 @@ export default function MyBookings() {
       </Box>
     </>
   );
-}
+};

@@ -45,18 +45,27 @@ export const NavBar = () => {
             pt={{ xs: 12, md: 1 }}
             pb={{ xs: 4, md: 1 }}
             px={{ xs: 4, md: 0 }}
-            className={[ "navlinks",menuOpen && "navlinks active"]}
+            className={["navlinks", menuOpen && "navlinks active"]}
           >
             <p>Find Doctors</p>
-            <Link to="/search" style={{textDecoration:"none",color:"black",fontWeight:"500"}}>Hospitals</Link>
+            <Link
+              to="/search"
+              style={{
+                textDecoration: "none",
+                color: "black",
+                fontWeight: "500",
+              }}
+            >
+              Hospitals
+            </Link>
             <p>Medicines</p>
             <p>Surgeries</p>
             <p>Software for Provider</p>
             <p>Facilities</p>
-            <Link to="./my-bookings">
-            <Button variant="contained" disableElevation>
-              My Bookings
-            </Button>
+            <Link to="/bookings">
+              <Button variant="contained" disableElevation>
+                My Bookings
+              </Button>
             </Link>
 
             {isMobile && (

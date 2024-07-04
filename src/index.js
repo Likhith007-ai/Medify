@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material";
 import Search from "./Components/Home/Search/Search";
 import { Home } from "./Components/Home/Home";
-import MyBookings from "./Components/Home/MyBookings/MyBookings";
+import { MyBookings } from "./Components/Home/MyBookings/MyBookings";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
         element: <Search />,
       },
       {
-        path: "my-bookings",
+        path: "bookings",
         element: <MyBookings />,
       },
       {
@@ -29,7 +29,6 @@ const router = createBrowserRouter([
   },
 ]);
 
-//Theme object created using createTheme to override the CSS styles of MUI library
 export const theme = createTheme({
   typography: {
     fontFamily: "Poppins , sans-serif",
